@@ -1,6 +1,7 @@
 name: melon-ticket-checker
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/5 * * * *'
 
