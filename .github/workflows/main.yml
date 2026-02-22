@@ -3,7 +3,7 @@ name: melon-ticket-checker
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"   # 5분마다 체크
 
 jobs:
   check:
@@ -17,7 +17,7 @@ jobs:
           schedule-id: 100001
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: "🎫 취소표 감지! (2026-03-20) 지금 멜론티켓 확인!"
+          message: "🎫 취소표 발견! (3/20) 지금 멜론티켓 확인!"
 
       - name: 2026-03-21
         uses: mooyoul/melon-ticket-actions@v1.1.0
@@ -26,7 +26,7 @@ jobs:
           schedule-id: 100002
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: "🎫 취소표 감지! (2026-03-21) 지금 멜론티켓 확인!"
+          message: "🎫 취소표 발견! (3/21) 지금 멜론티켓 확인!"
 
       - name: 2026-03-22
         uses: mooyoul/melon-ticket-actions@v1.1.0
@@ -35,7 +35,7 @@ jobs:
           schedule-id: 100003
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: "🎫 취소표 감지! (2026-03-22) 지금 멜론티켓 확인!"
+          message: "🎫 취소표 발견! (3/22) 지금 멜론티켓 확인!"
 
       - name: 2026-03-27
         uses: mooyoul/melon-ticket-actions@v1.1.0
@@ -44,7 +44,7 @@ jobs:
           schedule-id: 100004
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: "🎫 취소표 감지! (2026-03-27) 지금 멜론티켓 확인!"
+          message: "🎫 취소표 발견! (3/27) 지금 멜론티켓 확인!"
 
       - name: 2026-03-28
         uses: mooyoul/melon-ticket-actions@v1.1.0
@@ -53,7 +53,7 @@ jobs:
           schedule-id: 100005
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: "🎫 취소표 감지! (2026-03-28) 지금 멜론티켓 확인!"
+          message: "🎫 취소표 발견! (3/28) 지금 멜론티켓 확인!"
 
       - name: 2026-03-29
         uses: mooyoul/melon-ticket-actions@v1.1.0
@@ -62,4 +62,4 @@ jobs:
           schedule-id: 100006
           seat-id: 1_0
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          message: "🎫 취소표 감지! (2026-03-29) 지금 멜론티켓 확인!"
+          message: "🎫 취소표 발견! (3/29) 지금 멜론티켓 확인!"
