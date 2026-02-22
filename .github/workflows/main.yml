@@ -10,11 +10,57 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check Melon Ticket
+
+      - name: 2026-03-20
         uses: mooyoul/melon-ticket-actions@v1.1.0
         with:
           product-id: 212676
           schedule-id: 100001
+          seat-id: 1_0
+          discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          email-to: 01038876277@mms.sktelecom.com
+
+      - name: 2026-03-21
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: 212676
+          schedule-id: 100002
+          seat-id: 1_0
+          discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          email-to: 01038876277@mms.sktelecom.com
+
+      - name: 2026-03-22
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: 212676
+          schedule-id: 100003
+          seat-id: 1_0
+          discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          email-to: 01038876277@mms.sktelecom.com
+
+      - name: 2026-03-27
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: 212676
+          schedule-id: 100004
+          seat-id: 1_0
+          discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          email-to: 01038876277@mms.sktelecom.com
+
+      - name: 2026-03-28
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: 212676
+          schedule-id: 100005
+          seat-id: 1_0
+          discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          email-to: 01038876277@mms.sktelecom.com
+
+      - name: 2026-03-29
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: 212676
+          schedule-id: 100006
           seat-id: 1_0
           discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           email-to: 01038876277@mms.sktelecom.com
