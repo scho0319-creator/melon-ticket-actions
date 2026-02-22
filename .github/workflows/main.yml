@@ -15,3 +15,5 @@ jobs:
           product-id: 212676
           schedule-id: 100001
           seat-id: 1_0
+          discord-webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          email-to: 01038876277@mms.sktelecom.com
