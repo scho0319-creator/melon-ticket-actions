@@ -3,11 +3,12 @@ name: melon-ticket-checker
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"   # 5분마다 체크
 
 jobs:
   check:
     runs-on: ubuntu-latest
+
     steps:
       - name: 2026-03-20
         uses: mooyoul/melon-ticket-actions@v1.1.0
